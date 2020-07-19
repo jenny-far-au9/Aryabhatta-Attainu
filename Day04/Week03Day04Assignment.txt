@@ -1,0 +1,37 @@
+a = 0, i = N
+while i > 0:
+   a += i
+   i /= 2
+Solution 
+        Here we have i = i/2 so for every N this loop will be repeated
+for logN with base 2.
+///////////
+
+i = n / 2
+ while i < n:
+     j = 2
+     while j < n:
+         j *= 2
+      i=i+1
+Solution 
+       Here we have i=n/2 so first while loop will run for n and the second will 
+run for log n times since bot the while loops are contained one into other we get 
+time complexity as n log(n)
+O(n log(n))
+//////////////////
+
+
+count = 0
+i = n
+while i > 0:
+  print(i)
+  j=0
+  print(j)
+  while j < i:
+    count+=1
+    print(count)
+    j=j+1
+  i /= 2
+Solution: 
+        Here i>0 makes the loop infinite so time complexity I think should be O(n) for inner loop only but if memory is exhausted the time complexity should be O(n * log(n))
+O(n*log(n))
